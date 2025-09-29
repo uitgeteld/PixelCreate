@@ -1,0 +1,13 @@
+{
+  "itemGroup.pixelcreate": "Example Mod Tab",
+  "block.pixelcreate.example_block": "Example Block",
+  "item.pixelcreate.example_item": "Example Item",
+
+  "pixelcreate.configuration.title": "PixelCreate Configs",
+  "pixelcreate.configuration.section.pixelcreate.common.toml": "PixelCreate Configs",
+  "pixelcreate.configuration.section.pixelcreate.common.toml.title": "PixelCreate Configs",
+  "pixelcreate.configuration.items": "Item List",
+  "pixelcreate.configuration.logDirtBlock": "Log Dirt Block",
+  "pixelcreate.configuration.magicNumberIntroduction": "Magic Number Text",
+  "pixelcreate.configuration.magicNumber": "Magic Number"
+}
