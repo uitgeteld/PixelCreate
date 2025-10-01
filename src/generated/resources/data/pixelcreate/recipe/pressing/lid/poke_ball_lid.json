@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "pixelmon:cooked_red_apricorn"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:poke_ball_lid"
+    }
+  ]
+}
