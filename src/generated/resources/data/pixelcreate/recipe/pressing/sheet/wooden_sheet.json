@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "minecraft:wooden_slabs"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelcreate:wooden_sheet"
+    }
+  ]
+}

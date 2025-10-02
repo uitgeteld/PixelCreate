@@ -1,7 +1,10 @@
 {
-  "itemGroup.pixelcreate": "Example Mod Tab",
-  "block.pixelcreate.example_block": "Example Block",
-  "item.pixelcreate.example_item": "Example Item",
+  "item.pixelcreate.aluminum_sheet": "Aluminum Sheet",
+  "item.pixelcreate.platinum_sheet": "Platinum Sheet",
+  "item.pixelcreate.silver_sheet": "Silver Sheet",
+  "item.pixelcreate.wooden_sheet": "Wooden Sheet",
+  
+  "itemGroup.pixelcreate": "PixelCreate",
 
   "pixelcreate.configuration.title": "PixelCreate Configs",
   "pixelcreate.configuration.section.pixelcreate.common.toml": "PixelCreate Configs",

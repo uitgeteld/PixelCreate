@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "pixelmon:aluminum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelcreate:aluminum_sheet"
+    }
+  ]
+}
