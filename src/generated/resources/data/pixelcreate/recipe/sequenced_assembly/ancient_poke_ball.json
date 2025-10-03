@@ -1,0 +1,78 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "type": "neoforge:components",
+    "items": "pixelmon:poke_ball_lid",
+    "components": {
+      "pixelmon:poke_ball": "ancient_poke_ball"
+    },
+    "strict": true
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "pixelmon:poke_ball",
+      "components": {
+        "pixelmon:poke_ball": "ancient_poke_ball"
+      }
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "type": "neoforge:components",
+          "items": "pixelmon:poke_ball_lid",
+          "components": {
+            "pixelmon:poke_ball": "ancient_poke_ball"
+          },
+          "strict": true
+        },
+        {
+          "tag": "minecraft:stone_buttons"
+        }
+      ],
+      "results": [
+        {
+          "id": "pixelcreate:incomplete_ancient_poke_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "pixelcreate:incomplete_ancient_poke_ball"
+        },
+        {
+          "item": "pixelmon:wooden_base"
+        }
+      ],
+      "results": [
+        {
+          "id": "pixelcreate:incomplete_ancient_poke_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "pixelcreate:incomplete_ancient_poke_ball"
+        }
+      ],
+      "results": [
+        {
+          "id": "pixelmon:poke_ball",
+          "components": {
+            "pixelmon:poke_ball": "ancient_poke_ball"
+          }
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "pixelcreate:incomplete_ancient_poke_ball"
+  }
+}

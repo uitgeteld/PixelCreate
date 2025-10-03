@@ -100,6 +100,35 @@ public class PixelCreate {
             }
     );
 
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_POKE_BALL = ITEMS.register(
+            "incomplete_ancient_poke_ball",
+            () -> new Item(new Item.Properties()) {
+                @Override
+                public boolean isEnabled(FeatureFlagSet enabledFeatures) {
+                    return false;
+                }
+            }
+    );
+
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_GREAT_BALL = ITEMS.register(
+            "incomplete_ancient_great_ball",
+            () -> new Item(new Item.Properties()) {
+                @Override
+                public boolean isEnabled(FeatureFlagSet enabledFeatures) {
+                    return false;
+                }
+            }
+    );
+
+    public static final DeferredItem<Item> INCOMPLETE_ANCIENT_ULTRA_BALL = ITEMS.register(
+            "incomplete_ancient_ultra_ball",
+            () -> new Item(new Item.Properties()) {
+                @Override
+                public boolean isEnabled(FeatureFlagSet enabledFeatures) {
+                    return false;
+                }
+            }
+    );
     // Creates a creative tab with the id "pixelcreate:example_tab" for the example item, that is placed after the combat tab
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB =
             CREATIVE_MODE_TABS.register("pixelcreate", () -> CreativeModeTab.builder()
@@ -114,6 +143,9 @@ public class PixelCreate {
                         output.accept(INCOMPLETE_POKE_BALL.get());
                         output.accept(INCOMPLETE_GREAT_BALL.get());
                         output.accept(INCOMPLETE_ULTRA_BALL.get());
+                        output.accept(INCOMPLETE_ANCIENT_POKE_BALL.get());
+                        output.accept(INCOMPLETE_ANCIENT_GREAT_BALL.get());
+                        output.accept(INCOMPLETE_ANCIENT_ULTRA_BALL.get());
                     }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.

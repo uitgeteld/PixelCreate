@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "pixelmon:tumble_stone" },
+    { "item": "pixelmon:tumble_stone" },
+    { "item": "pixelmon:tumble_stone" },
+    { "item": "pixelmon:platinum_ingot" },
+    { "item": "pixelmon:platinum_ingot" }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:poke_ball_lid",
+      "count": 5,
+      "components": {
+        "pixelmon:poke_ball": "ancient_ultra_ball"
+      }
+    }
+  ],
+  "heatRequirement": "heated"
+}
