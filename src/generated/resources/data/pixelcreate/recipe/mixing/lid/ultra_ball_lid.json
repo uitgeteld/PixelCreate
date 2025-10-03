@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "pixelmon:cooked_black_apricorn" },
+    { "item": "pixelmon:cooked_black_apricorn" },
+    { "item": "pixelmon:cooked_yellow_apricorn" }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:poke_ball_lid",
+      "count": 5,
+      "components": {
+        "pixelmon:poke_ball": "ultra_ball"
+      }
+    }
+  ],
+  "heatRequirement": "heated"
+}

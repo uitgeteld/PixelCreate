@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "pixelmon:poke_ball_lid"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "pixelmon:poke_ball"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "pixelmon:poke_ball_lid"
+        },
+        {
+          "tag": "minecraft:stone_buttons"
+        }
+      ],
+      "results": [
+        {
+          "id": "pixelcreate:incomplete_poke_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "pixelcreate:incomplete_poke_ball"
+        },
+        {
+          "tag": "pixelmon:pokeball_bases"
+        }
+      ],
+      "results": [
+        {
+          "id": "pixelcreate:incomplete_poke_ball"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "pixelcreate:incomplete_poke_ball"
+        }
+      ],
+      "results": [
+        {
+          "id": "pixelmon:poke_ball"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "pixelcreate:incomplete_poke_ball"
+  }
+}

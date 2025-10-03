@@ -1,0 +1,14 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "item": "pixelmon:cooked_red_apricorn" },
+    { "item": "pixelmon:cooked_red_apricorn" },
+    { "item": "pixelmon:cooked_red_apricorn" }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:poke_ball_lid",
+      "count": 5
+    }
+  ]
+}

@@ -4,6 +4,10 @@
   "item.pixelcreate.silver_sheet": "Silver Sheet",
   "item.pixelcreate.wooden_sheet": "Wooden Sheet",
   
+  "item.pixelcreate.incomplete_poke_ball": "Incomplete Poké Ball",
+  "item.pixelcreate.incomplete_great_ball": "Incomplete Great Ball",
+  "item.pixelcreate.incomplete_ultra_ball": "Incomplete Ultra Ball",
+
   "itemGroup.pixelcreate": "PixelCreate",
 
   "pixelcreate.configuration.title": "PixelCreate Configs",
