@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "pixelcreate:silver_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:silver_base"
+    }
+  ]
+}

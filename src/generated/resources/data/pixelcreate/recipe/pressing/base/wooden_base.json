@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "pixelcreate:wooden_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:wooden_base"
+    }
+  ]
+}

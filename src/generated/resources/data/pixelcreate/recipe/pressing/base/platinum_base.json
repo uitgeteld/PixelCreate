@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "pixelcreate:platinum_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:platinum_base"
+    }
+  ]
+}
