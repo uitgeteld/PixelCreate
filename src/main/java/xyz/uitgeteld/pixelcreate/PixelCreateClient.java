@@ -25,7 +25,7 @@ public class PixelCreateClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        PixelCreate.LOGGER.info("HELLO FROM CLIENT SETUP");
-        PixelCreate.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+//        PixelCreate.LOGGER.info("HELLO FROM CLIENT SETUP");
+//        PixelCreate.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 }
