@@ -1,9 +1,10 @@
 {
   "type": "create:mixing",
+  "heat_requirement": "heated",
   "ingredients": [
-    { "item": "pixelmon:tumble_stone" },
-    { "item": "pixelmon:tumble_stone" },
-    { "item": "pixelmon:tumble_stone" },
+    { "item": "pixelmon:tumblestone" },
+    { "item": "pixelmon:tumblestone" },
+    { "item": "pixelmon:tumblestone" },
     { "item": "pixelmon:platinum_ingot" },
     { "item": "pixelmon:platinum_ingot" }
   ],
@@ -15,6 +16,5 @@
         "pixelmon:poke_ball": "ancient_ultra_ball"
       }
     }
-  ],
-  "heatRequirement": "heated"
+  ]
 }

@@ -1,5 +1,6 @@
 {
   "type": "create:mixing",
+  "heat_requirement": "heated",
   "ingredients": [
     { "item": "pixelmon:cooked_black_apricorn" },
     { "item": "pixelmon:cooked_black_apricorn" },
@@ -13,6 +14,5 @@
         "pixelmon:poke_ball": "ultra_ball"
       }
     }
-  ],
-  "heatRequirement": "heated"
+  ]
 }
