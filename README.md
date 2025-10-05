@@ -1,25 +1,56 @@
+# ⚙️ PixelCreate
 
-Installation information
-=======
+**PixelCreate** brings together the mechanical power of **Create** and the Pokémon world of **Pixelmon Reforged**.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Automate your Poké Ball crafting process using Create’s machinery — deployers, presses, and sequenced assemblies — all seamlessly integrated with Pixelmon’s items.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+---
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+## 🌟 Features
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+- 🔧 **Full Create integration** for Pixelmon items  
+- ⚙️ Craft Poké Balls and other Pixelmon materials using Create machines  
+- 🧱 Supports full automation through Create’s sequenced assembly system  
+- 🎨 Works naturally alongside both mods — no setup required  
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+---
+
+## 🧩 Requirements
+
+| Mod | Required | Description |
+|-----|-----------|-------------|
+| **Pixelmon Reforged** | ✅ | Adds Pokémon and Poké Ball items |
+| **Create** | ✅ | Enables mechanical crafting and automation |
+| **NeoForge** | ✅ | Loader support |
+
+---
+
+## 📦 Installation
+
+1. Install **Minecraft** (NeoForge build).  
+2. Add the following mods to your `/mods` folder:  
+   - `pixelmon-reforged`
+   - `create`
+   - `pixelcreate`  
+3. Launch the game and start automating your Poké Ball production!
+
+---
+
+## 🧠 How It Works
+
+PixelCreate automatically adds **Create-compatible recipes** for Pixelmon items.  
+You can use your favorite Create contraptions — like deployers, mechanical presses, and sequenced assemblies — to craft Poké Balls and their components.
+
+No manual configuration or scripting is needed. Just build and automate!
+
+---
+
+## ❤️ Credits
+
+- **Pixelmon Team** – for the Pokémon experience  
+- **Create Team** – for the mechanical magic
+- **Developed by:** *uitgeteld*  
+
+---
+
+### ⚡ “Catch ‘em all — automatically.” ⚙️
