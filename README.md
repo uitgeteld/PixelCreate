@@ -48,8 +48,8 @@ No manual configuration or scripting is needed. Just build and automate!
 ## ❤️ Credits
 
 - **Pixelmon Team** – for the Pokémon experience  
-- **Create Team** – for the mechanical magic  
-- **PixelCreate Team** – for bringing them together  
+- **Create Team** – for the mechanical magic
+- **Developed by:** *uitgeteld*  
 
 ---
 
