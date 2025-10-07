@@ -24,9 +24,9 @@ public class PixelCreate {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB =
             CREATIVE_MODE_TABS.register("pixelcreate", () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup.pixelcreate")) // name key
-                    .withTabsBefore(CreativeModeTabs.COMBAT) // where it shows in the menu
-                    .icon(() -> MaterialItems.ALUMINUM_SHEET.get().getDefaultInstance()) // tab icon
+                    .title(Component.translatable("itemGroup.pixelcreate"))
+                    .withTabsBefore(CreativeModeTabs.COMBAT)
+                    .icon(() -> MaterialItems.ALUMINUM_SHEET.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
                         // Materials
                         output.accept(MaterialItems.ALUMINUM_SHEET.get());

@@ -11,13 +11,5 @@
   "item.pixelcreate.incomplete_ancient_poke_ball": "Incomplete Ancient Poké Ball",
   "item.pixelcreate.incomplete_ancient_great_ball": "Incomplete Ancient Great Ball",
   "item.pixelcreate.incomplete_ancient_ultra_ball": "Incomplete Ancient Ultra Ball",
-  "itemGroup.pixelcreate": "PixelCreate",
-
-  "pixelcreate.configuration.title": "PixelCreate Configs",
-  "pixelcreate.configuration.section.pixelcreate.common.toml": "PixelCreate Configs",
-  "pixelcreate.configuration.section.pixelcreate.common.toml.title": "PixelCreate Configs",
-  "pixelcreate.configuration.items": "Item List",
-  "pixelcreate.configuration.logDirtBlock": "Log Dirt Block",
-  "pixelcreate.configuration.magicNumberIntroduction": "Magic Number Text",
-  "pixelcreate.configuration.magicNumber": "Magic Number"
+  "itemGroup.pixelcreate": "PixelCreate"
 }
