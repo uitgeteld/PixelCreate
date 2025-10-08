@@ -12,6 +12,7 @@ import xyz.uitgeteld.pixelcreate.item.pokeball.AncientPokeballs;
 import xyz.uitgeteld.pixelcreate.tab.CreativeTab;
 
 @Mod(PixelCreate.MODID)
+
 public class PixelCreate {
     public static final String MODID = "pixelcreate";
     public static final Logger LOGGER = LogUtils.getLogger();
