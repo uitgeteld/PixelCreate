@@ -1,0 +1,14 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    { "tag": "minecraft:wooden_slabs" },
+    { "tag": "minecraft:wooden_slabs" },
+    { "tag": "minecraft:wooden_slabs" }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:wooden_base",
+      "count": 5
+    }
+  ]
+}
