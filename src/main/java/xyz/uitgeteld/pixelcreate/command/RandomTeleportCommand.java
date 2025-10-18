@@ -10,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.levelgen.Heightmap;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,8 +19,8 @@ import java.util.UUID;
 
 public class RandomTeleportCommand {
     private static final Random RANDOM = new Random();
-    private static final int RANGE = 5000; // how far the teleport can go
-    private static final long COOLDOWN_MS = 5 * 60 * 1000; // 5 minutes
+    private static final int RANGE = 5000;
+    private static final long COOLDOWN_MS = 2 * 60 * 1000;
 
     private static final Map<UUID, Long> COOLDOWNS = new HashMap<>();
 
@@ -28,9 +29,15 @@ public class RandomTeleportCommand {
                 Commands.literal("rtp")
                         .executes(context -> {
                             ServerPlayer player = context.getSource().getPlayerOrException();
+                            ServerLevel level = player.serverLevel();
+
+                            if (level.dimension() != Level.OVERWORLD) {
+                                player.sendSystemMessage(Component.literal("§c/rtp can only be used in the Overworld!"));
+                                return 0;
+                            }
+
                             long now = System.currentTimeMillis();
 
-                            // Check cooldown
                             if (COOLDOWNS.containsKey(player.getUUID())) {
                                 long lastUsed = COOLDOWNS.get(player.getUUID());
                                 long timeLeft = (COOLDOWN_MS - (now - lastUsed)) / 1000;
@@ -40,12 +47,10 @@ public class RandomTeleportCommand {
                                 }
                             }
 
-                            ServerLevel level = player.serverLevel();
                             double x = RANDOM.nextInt(RANGE * 2) - RANGE;
                             double z = RANDOM.nextInt(RANGE * 2) - RANGE;
 
-                            // Find safe Y position
-                            BlockPos pos = findSafePos(level, new BlockPos((int)x, level.getMaxBuildHeight(), (int)z));
+                            BlockPos pos = findSafePos(level, new BlockPos((int) x, 0, (int) z));
 
                             if (pos == null) {
                                 player.sendSystemMessage(Component.literal("§cFailed to find a safe spot. Try again!"));
@@ -61,16 +66,28 @@ public class RandomTeleportCommand {
         );
     }
 
-    private static BlockPos findSafePos(Level level, BlockPos startPos) {
-        // Scan downward until we find solid ground with air above
-        for (int y = level.getMaxBuildHeight(); y > level.getMinBuildHeight(); y--) {
-            BlockPos pos = new BlockPos(startPos.getX(), y, startPos.getZ());
-            BlockState block = level.getBlockState(pos);
-            BlockState above = level.getBlockState(pos.above());
-            if (block.isSolid() && above.isAir()) {
-                return pos;
-            }
+    private static BlockPos findSafePos(ServerLevel level, BlockPos startPos) {
+        BlockPos topPos = level.getHeightmapPos(Heightmap.Types.MOTION_BLOCKING,
+                new BlockPos(startPos.getX(), 0, startPos.getZ()));
+
+        BlockState groundBlock = level.getBlockState(topPos.below());
+        BlockState feetBlock = level.getBlockState(topPos);
+        BlockState headBlock = level.getBlockState(topPos.above());
+
+        if (feetBlock.isAir() && headBlock.isAir() &&
+                groundBlock.isSolid() &&
+                !isUnsafeBlock(groundBlock)) {
+            return topPos.below();
         }
+
         return null;
+    }
+
+    private static boolean isUnsafeBlock(BlockState state) {
+        // Add more unsafe blocks as needed
+        return state.liquid() ||
+                state.is(Blocks.CACTUS) ||
+                state.is(Blocks.FIRE) ||
+                state.is(Blocks.MAGMA_BLOCK);
     }
 }
