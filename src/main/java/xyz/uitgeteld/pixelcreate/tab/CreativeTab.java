@@ -26,6 +26,16 @@ public class CreativeTab {
                         output.accept(MaterialItems.SILVER_SHEET.get());
                         output.accept(MaterialItems.WOODEN_SHEET.get());
 
+                        // Chunks
+                        output.accept(MaterialItems.DEEPSLATE_CHUNK.get());
+                        output.accept(MaterialItems.RAW_IRON_CHUNK.get());
+                        output.accept(MaterialItems.RAW_COPPER_CHUNK.get());
+                        output.accept(MaterialItems.RAW_ZINC_CHUNK.get());
+                        output.accept(MaterialItems.RAW_ALUMINIUM_CHUNK.get());
+                        output.accept(MaterialItems.RAW_GOLD_CHUNK.get());
+                        output.accept(MaterialItems.RAW_SILVER_CHUNK.get());
+                        output.accept(MaterialItems.RAW_PLATINUM_CHUNK.get());
+
                         // Normal Pokéballs
                         output.accept(NormalPokeballs.INCOMPLETE_POKE_BALL.get());
                         output.accept(NormalPokeballs.INCOMPLETE_GREAT_BALL.get());
