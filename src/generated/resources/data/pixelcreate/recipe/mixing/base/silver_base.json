@@ -2,9 +2,15 @@
   "type": "create:mixing",
   "heat_requirement": "heated",
   "ingredients": [
-    { "item": "pixelmon:silver_ingot" },
-    { "item": "pixelmon:silver_ingot" },
-    { "item": "pixelmon:silver_ingot" }
+    {
+      "item": "pixelmon:silver_ingot"
+    },
+    {
+      "item": "pixelmon:silver_ingot"
+    },
+    {
+      "item": "pixelmon:silver_ingot"
+    }
   ],
   "results": [
     {

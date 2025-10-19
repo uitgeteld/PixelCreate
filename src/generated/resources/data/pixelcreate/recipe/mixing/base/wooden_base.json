@@ -1,9 +1,15 @@
 {
   "type": "create:mixing",
   "ingredients": [
-    { "tag": "minecraft:wooden_slabs" },
-    { "tag": "minecraft:wooden_slabs" },
-    { "tag": "minecraft:wooden_slabs" }
+    {
+      "tag": "minecraft:wooden_slabs"
+    },
+    {
+      "tag": "minecraft:wooden_slabs"
+    },
+    {
+      "tag": "minecraft:wooden_slabs"
+    }
   ],
   "results": [
     {

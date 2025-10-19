@@ -2,11 +2,21 @@
   "type": "create:mixing",
   "heat_requirement": "heated",
   "ingredients": [
-    { "item": "pixelmon:tumblestone" },
-    { "item": "pixelmon:tumblestone" },
-    { "item": "pixelmon:tumblestone" },
-    { "item": "pixelmon:platinum_ingot" },
-    { "item": "pixelmon:platinum_ingot" }
+    {
+      "item": "pixelmon:tumblestone"
+    },
+    {
+      "item": "pixelmon:tumblestone"
+    },
+    {
+      "item": "pixelmon:tumblestone"
+    },
+    {
+      "item": "pixelmon:platinum_ingot"
+    },
+    {
+      "item": "pixelmon:platinum_ingot"
+    }
   ],
   "results": [
     {

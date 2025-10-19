@@ -1,9 +1,15 @@
 {
   "type": "create:mixing",
   "ingredients": [
-    { "item": "pixelmon:cooked_blue_apricorn" },
-    { "item": "pixelmon:cooked_blue_apricorn" },
-    { "item": "pixelmon:cooked_red_apricorn" }
+    {
+      "item": "pixelmon:cooked_blue_apricorn"
+    },
+    {
+      "item": "pixelmon:cooked_blue_apricorn"
+    },
+    {
+      "item": "pixelmon:cooked_red_apricorn"
+    }
   ],
   "results": [
     {

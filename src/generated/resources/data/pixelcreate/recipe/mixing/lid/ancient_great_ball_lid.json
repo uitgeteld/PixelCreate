@@ -1,11 +1,21 @@
 {
   "type": "create:mixing",
   "ingredients": [
-    { "item": "pixelmon:tumblestone" },
-    { "item": "pixelmon:tumblestone" },
-    { "item": "pixelmon:tumblestone" },
-    { "item": "pixelmon:silver_ingot" },
-    { "item": "pixelmon:silver_ingot" }
+    {
+      "item": "pixelmon:tumblestone"
+    },
+    {
+      "item": "pixelmon:tumblestone"
+    },
+    {
+      "item": "pixelmon:tumblestone"
+    },
+    {
+      "item": "pixelmon:silver_ingot"
+    },
+    {
+      "item": "pixelmon:silver_ingot"
+    }
   ],
   "results": [
     {
