@@ -1,0 +1,19 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "type": "fluid_tag",
+      "amount": 25,
+      "fluid_tag": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelcreate:deepslate_chunk"
+    }
+  ]
+}
