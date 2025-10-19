@@ -1,0 +1,39 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate"
+    }
+  ],
+  "processingTime": 1000,
+  "results": [
+    {
+      "chance": 0.27,
+      "id": "pixelcreate:raw_iron_chunk"
+    },
+    {
+      "chance": 0.22,
+      "id": "pixelcreate:raw_copper_chunk"
+    },
+    {
+      "chance": 0.17,
+      "id": "pixelcreate:raw_zinc_chunk"
+    },
+    {
+      "chance": 0.12,
+      "id": "pixelcreate:raw_aluminium_chunk"
+    },
+    {
+      "chance": 0.09,
+      "id": "pixelcreate:raw_gold_chunk"
+    },
+    {
+      "chance": 0.05,
+      "id": "pixelcreate:raw_silver_chunk"
+    },
+    {
+      "chance": 0.03,
+      "id": "pixelcreate:raw_platinum_chunk"
+    }
+  ]
+}
