@@ -1,0 +1,22 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "pixelcreate:deepslate_chunk"
+    },
+    {
+      "item": "pixelcreate:deepslate_chunk"
+    },
+    {
+      "item": "pixelcreate:deepslate_chunk"
+    },
+    {
+      "item": "pixelcreate:deepslate_chunk"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:cobbled_deepslate"
+    }
+  ]
+}
