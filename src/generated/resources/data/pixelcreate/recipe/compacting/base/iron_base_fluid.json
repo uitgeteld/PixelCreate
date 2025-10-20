@@ -1,0 +1,25 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "type": "fluid_tag",
+      "amount": 75,
+      "fluid_tag": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:iron_base",
+      "count": 5
+    }
+  ]
+}
