@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "pixelmon:silver_ingot"
+    },
+    {
+      "item": "pixelmon:silver_ingot"
+    },
+    {
+      "item": "pixelmon:silver_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:silver_base",
+      "count": 5
+    }
+  ]
+}
