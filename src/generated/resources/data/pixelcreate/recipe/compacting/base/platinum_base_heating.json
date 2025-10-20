@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "pixelmon:platinum_ingot"
+    },
+    {
+      "item": "pixelmon:platinum_ingot"
+    },
+    {
+      "item": "pixelmon:platinum_ingot"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelmon:platinum_base",
+      "count": 5
+    }
+  ]
+}
