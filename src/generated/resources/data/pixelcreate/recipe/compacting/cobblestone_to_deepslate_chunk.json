@@ -1,7 +1,6 @@
 {
   "type": "create:compacting",
   "ingredients": [
-
     {
       "item": "minecraft:cobblestone"
     },
