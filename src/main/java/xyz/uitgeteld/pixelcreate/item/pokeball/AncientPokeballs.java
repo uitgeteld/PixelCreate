@@ -4,6 +4,7 @@ import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.NotNull;
 import xyz.uitgeteld.pixelcreate.PixelCreate;
 
 public class AncientPokeballs {
@@ -12,7 +13,7 @@ public class AncientPokeballs {
     public static final DeferredItem<Item> INCOMPLETE_ANCIENT_POKE_BALL = ITEMS.register("incomplete_ancient_poke_ball",
             () -> new Item(new Item.Properties()) {
                 @Override
-                public boolean isEnabled(FeatureFlagSet enabledFeatures) {
+                public boolean isEnabled(@NotNull FeatureFlagSet enabledFeatures) {
                     return false;
                 }
             });
@@ -20,7 +21,7 @@ public class AncientPokeballs {
     public static final DeferredItem<Item> INCOMPLETE_ANCIENT_GREAT_BALL = ITEMS.register("incomplete_ancient_great_ball",
             () -> new Item(new Item.Properties()) {
                 @Override
-                public boolean isEnabled(FeatureFlagSet enabledFeatures) {
+                public boolean isEnabled(@NotNull FeatureFlagSet enabledFeatures) {
                     return false;
                 }
             });
@@ -28,7 +29,7 @@ public class AncientPokeballs {
     public static final DeferredItem<Item> INCOMPLETE_ANCIENT_ULTRA_BALL = ITEMS.register("incomplete_ancient_ultra_ball",
             () -> new Item(new Item.Properties()) {
                 @Override
-                public boolean isEnabled(FeatureFlagSet enabledFeatures) {
+                public boolean isEnabled(@NotNull FeatureFlagSet enabledFeatures) {
                     return false;
                 }
             });

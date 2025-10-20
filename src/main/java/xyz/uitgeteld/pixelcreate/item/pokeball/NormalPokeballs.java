@@ -4,6 +4,7 @@ import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.NotNull;
 import xyz.uitgeteld.pixelcreate.PixelCreate;
 
 public class NormalPokeballs {
@@ -12,7 +13,7 @@ public class NormalPokeballs {
     public static final DeferredItem<Item> INCOMPLETE_POKE_BALL = ITEMS.register("incomplete_poke_ball",
             () -> new Item(new Item.Properties()) {
                 @Override
-                public boolean isEnabled(FeatureFlagSet enabledFeatures) {
+                public boolean isEnabled(@NotNull FeatureFlagSet enabledFeatures) {
                     return false;
                 }
             });
@@ -20,7 +21,7 @@ public class NormalPokeballs {
     public static final DeferredItem<Item> INCOMPLETE_GREAT_BALL = ITEMS.register("incomplete_great_ball",
             () -> new Item(new Item.Properties()) {
                 @Override
-                public boolean isEnabled(FeatureFlagSet enabledFeatures) {
+                public boolean isEnabled(@NotNull FeatureFlagSet enabledFeatures) {
                     return false;
                 }
             });
@@ -28,7 +29,7 @@ public class NormalPokeballs {
     public static final DeferredItem<Item> INCOMPLETE_ULTRA_BALL = ITEMS.register("incomplete_ultra_ball",
             () -> new Item(new Item.Properties()) {
                 @Override
-                public boolean isEnabled(FeatureFlagSet enabledFeatures) {
+                public boolean isEnabled(@NotNull FeatureFlagSet enabledFeatures) {
                     return false;
                 }
             });
