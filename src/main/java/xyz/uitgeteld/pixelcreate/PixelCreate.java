@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
 import xyz.uitgeteld.pixelcreate.command.RandomTeleportCommand;
-import xyz.uitgeteld.pixelcreate.item.material.MaterialItems;
+import xyz.uitgeteld.pixelcreate.item.material.ModItems;
 import xyz.uitgeteld.pixelcreate.item.pokeball.NormalPokeballs;
 import xyz.uitgeteld.pixelcreate.item.pokeball.AncientPokeballs;
 import xyz.uitgeteld.pixelcreate.tab.CreativeTab;
@@ -24,7 +24,7 @@ public class PixelCreate {
     public PixelCreate(IEventBus modEventBus) {
         modEventBus.addListener(this::commonSetup);
 
-        MaterialItems.ITEMS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
         NormalPokeballs.ITEMS.register(modEventBus);
         AncientPokeballs.ITEMS.register(modEventBus);
         CreativeTab.CREATIVE_MODE_TABS.register(modEventBus);

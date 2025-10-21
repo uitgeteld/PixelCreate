@@ -7,7 +7,7 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xyz.uitgeteld.pixelcreate.PixelCreate;
-import xyz.uitgeteld.pixelcreate.item.material.MaterialItems;
+import xyz.uitgeteld.pixelcreate.item.material.ModItems;
 import xyz.uitgeteld.pixelcreate.item.pokeball.AncientPokeballs;
 import xyz.uitgeteld.pixelcreate.item.pokeball.NormalPokeballs;
 
@@ -18,23 +18,23 @@ public class CreativeTab {
             CREATIVE_MODE_TABS.register("pixelcreate", () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup.pixelcreate")) // name key
                     .withTabsBefore(CreativeModeTabs.COMBAT) // where it shows in the menu
-                    .icon(() -> MaterialItems.ALUMINUM_SHEET.get().getDefaultInstance()) // tab icon
+                    .icon(() -> ModItems.ALUMINUM_SHEET.get().getDefaultInstance()) // tab icon
                     .displayItems((parameters, output) -> {
                         // Materials
-                        output.accept(MaterialItems.ALUMINUM_SHEET.get());
-                        output.accept(MaterialItems.PLATINUM_SHEET.get());
-                        output.accept(MaterialItems.SILVER_SHEET.get());
-                        output.accept(MaterialItems.WOODEN_SHEET.get());
+                        output.accept(ModItems.ALUMINUM_SHEET.get());
+                        output.accept(ModItems.PLATINUM_SHEET.get());
+                        output.accept(ModItems.SILVER_SHEET.get());
+                        output.accept(ModItems.WOODEN_SHEET.get());
 
                         // Chunks
-                        output.accept(MaterialItems.DEEPSLATE_CHUNK.get());
-                        output.accept(MaterialItems.RAW_IRON_CHUNK.get());
-                        output.accept(MaterialItems.RAW_COPPER_CHUNK.get());
-                        output.accept(MaterialItems.RAW_ZINC_CHUNK.get());
-                        output.accept(MaterialItems.RAW_ALUMINIUM_CHUNK.get());
-                        output.accept(MaterialItems.RAW_GOLD_CHUNK.get());
-                        output.accept(MaterialItems.RAW_SILVER_CHUNK.get());
-                        output.accept(MaterialItems.RAW_PLATINUM_CHUNK.get());
+                        output.accept(ModItems.DEEPSLATE_CHUNK.get());
+                        output.accept(ModItems.RAW_IRON_CHUNK.get());
+                        output.accept(ModItems.RAW_COPPER_CHUNK.get());
+                        output.accept(ModItems.RAW_ZINC_CHUNK.get());
+                        output.accept(ModItems.RAW_ALUMINIUM_CHUNK.get());
+                        output.accept(ModItems.RAW_GOLD_CHUNK.get());
+                        output.accept(ModItems.RAW_SILVER_CHUNK.get());
+                        output.accept(ModItems.RAW_PLATINUM_CHUNK.get());
 
                         // Normal Pokéballs
                         output.accept(NormalPokeballs.INCOMPLETE_POKE_BALL.get());
