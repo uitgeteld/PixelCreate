@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "pixelcreate:raw_iron_chunk"
+    }
+  ],
+  "results": [
+    {
+      "id": "pixelcreate:raw_iron_molten_source",
+      "amount": 90
+    }
+  ]
+}
