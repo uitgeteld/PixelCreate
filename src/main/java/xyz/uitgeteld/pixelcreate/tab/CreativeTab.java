@@ -7,7 +7,8 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xyz.uitgeteld.pixelcreate.PixelCreate;
-import xyz.uitgeteld.pixelcreate.item.material.ModItems;
+import xyz.uitgeteld.pixelcreate.block.ModBlocks;
+import xyz.uitgeteld.pixelcreate.item.ModItems;
 import xyz.uitgeteld.pixelcreate.item.pokeball.AncientPokeballs;
 import xyz.uitgeteld.pixelcreate.item.pokeball.NormalPokeballs;
 
@@ -35,6 +36,9 @@ public class CreativeTab {
                         output.accept(ModItems.RAW_GOLD_CHUNK.get());
                         output.accept(ModItems.RAW_SILVER_CHUNK.get());
                         output.accept(ModItems.RAW_PLATINUM_CHUNK.get());
+
+//                        output.accept(ModBlocks.RAW_IRON_MOLTEN_BLOCK.get());
+                        output.accept(ModItems.RAW_IRON_MOLTEN_BUCKET.get());
 
                         // Normal Pokéballs
                         output.accept(NormalPokeballs.INCOMPLETE_POKE_BALL.get());
