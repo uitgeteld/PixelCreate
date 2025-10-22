@@ -9,6 +9,7 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.NotNull;
 import xyz.uitgeteld.pixelcreate.PixelCreate;
 import xyz.uitgeteld.pixelcreate.fluid.ModFluidTypes;
 import xyz.uitgeteld.pixelcreate.fluid.ModFluids;
@@ -30,12 +31,12 @@ public class ClientModEvents {
             private static final ResourceLocation OVERLAY = ResourceLocation.withDefaultNamespace("block/lava_flow");
 
             @Override
-            public ResourceLocation getStillTexture() {
+            public @NotNull ResourceLocation getStillTexture() {
                 return STILL;
             }
 
             @Override
-            public ResourceLocation getFlowingTexture() {
+            public @NotNull ResourceLocation getFlowingTexture() {
                 return FLOWING;
             }
 
