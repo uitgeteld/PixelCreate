@@ -32,7 +32,7 @@ public class CreativeTab {
                         output.accept(ModItems.RAW_IRON_CHUNK.get());
                         output.accept(ModItems.RAW_COPPER_CHUNK.get());
                         output.accept(ModItems.RAW_ZINC_CHUNK.get());
-                        output.accept(ModItems.RAW_ALUMINIUM_CHUNK.get());
+                        output.accept(ModItems.RAW_BAUXITE_CHUNK.get());
                         output.accept(ModItems.RAW_GOLD_CHUNK.get());
                         output.accept(ModItems.RAW_SILVER_CHUNK.get());
                         output.accept(ModItems.RAW_PLATINUM_CHUNK.get());
