@@ -19,7 +19,7 @@ public class ModBlocks {
             BLOCKS.register("raw_iron_molten_block",
                     () -> new LiquidBlock(ModFluids.RAW_IRON_MOLTEN_SOURCE.get(),
                             BlockBehaviour.Properties.of()
-                                    .mapColor(MapColor.FIRE)
+                                    .mapColor(MapColor.COLOR_BROWN)
                                     .noCollission()
                                     .strength(100.0F, 100.0F)
                                     .lightLevel((state) -> 15)
