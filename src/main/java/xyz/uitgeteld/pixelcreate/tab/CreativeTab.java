@@ -37,7 +37,6 @@ public class CreativeTab {
                         output.accept(ModItems.RAW_SILVER_CHUNK.get());
                         output.accept(ModItems.RAW_PLATINUM_CHUNK.get());
 
-//                        output.accept(ModBlocks.RAW_IRON_MOLTEN_BLOCK.get());
                         output.accept(ModItems.RAW_IRON_MOLTEN_BUCKET.get());
 
                         // Normal Pokéballs
