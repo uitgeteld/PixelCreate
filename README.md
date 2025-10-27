@@ -13,6 +13,8 @@ Build, press, and deploy your way to the ultimate Pokémon factory — all using
 - 🧱 Supports **sequenced assembly** and full automation  
 - 🎨 Works seamlessly with both mods — **no setup required**
 
+**Next to be added: _Full working fluids_**
+
 ---
 
 ## 🧩 Requirements
