@@ -32,7 +32,7 @@ Build, press, and deploy your way to the ultimate Pokémon factory — all using
 1. Install **Minecraft (NeoForge build)**.  
 2. Add the following mods to your `/mods` folder:
    - `pixelmon-reforged`
-   - `create`
+   - `create (6.x)`
    - `pixelcreate`
 3. Launch the game and start automating your Poké Ball production!
 
