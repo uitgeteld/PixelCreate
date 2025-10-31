@@ -26,9 +26,9 @@ public class ModItems {
     public static final DeferredItem<Item> RAW_SILVER_CHUNK = ITEMS.registerSimpleItem("raw_silver_chunk", new Item.Properties());
     public static final DeferredItem<Item> RAW_PLATINUM_CHUNK = ITEMS.registerSimpleItem("raw_platinum_chunk", new Item.Properties());
 
-    public static final DeferredHolder<Item, BucketItem> RAW_IRON_MOLTEN_BUCKET =
-            ITEMS.register("raw_iron_molten_bucket",
-                    () -> new BucketItem(ModFluids.RAW_IRON_MOLTEN_SOURCE.get(),
+    public static final DeferredHolder<Item, BucketItem> MOLTEN_IRON_BUCKET =
+            ITEMS.register("molten_iron_bucket",
+                    () -> new BucketItem(ModFluids.MOLTEN_IRON.get(),
                             new Item.Properties()
                                     .craftRemainder(Items.BUCKET)
                                     .stacksTo(1)));

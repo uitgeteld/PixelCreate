@@ -15,21 +15,21 @@ public class ModFluids {
     public static final DeferredRegister<Fluid> FLUIDS =
             DeferredRegister.create(Registries.FLUID, MODID);
 
-    public static final DeferredHolder<Fluid, BaseFlowingFluid.Source> RAW_IRON_MOLTEN_SOURCE =
-            FLUIDS.register("raw_iron_molten_source",
-                    () -> new BaseFlowingFluid.Source(getRawIronMoltenProperties()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid.Source> MOLTEN_IRON =
+            FLUIDS.register("molten_iron",
+                    () -> new BaseFlowingFluid.Source(getMoltenIronProperties()));
 
-    public static final DeferredHolder<Fluid, BaseFlowingFluid.Flowing> RAW_IRON_MOLTEN_FLOWING =
-            FLUIDS.register("raw_iron_molten_flowing",
-                    () -> new BaseFlowingFluid.Flowing(getRawIronMoltenProperties()));
+    public static final DeferredHolder<Fluid, BaseFlowingFluid.Flowing> MOLTEN_IRON_FLOWING =
+            FLUIDS.register("molten_iron_flowing",
+                    () -> new BaseFlowingFluid.Flowing(getMoltenIronProperties()));
 
-    private static BaseFlowingFluid.Properties getRawIronMoltenProperties() {
+    private static BaseFlowingFluid.Properties getMoltenIronProperties() {
         return new BaseFlowingFluid.Properties(
-                ModFluidTypes.RAW_IRON_MOLTEN_TYPE,
-                RAW_IRON_MOLTEN_SOURCE,
-                RAW_IRON_MOLTEN_FLOWING)
-                .block(() -> (LiquidBlock) ModBlocks.RAW_IRON_MOLTEN_BLOCK.get())
-                .bucket(ModItems.RAW_IRON_MOLTEN_BUCKET)
+                ModFluidTypes.MOLTEN_IRON_TYPE,
+                MOLTEN_IRON,
+                MOLTEN_IRON_FLOWING)
+                .block(() -> (LiquidBlock) ModBlocks.MOLTEN_IRON_BLOCK.get())
+                .bucket(ModItems.MOLTEN_IRON_BUCKET)
                 .tickRate(30)
                 .slopeFindDistance(2)
                 .levelDecreasePerBlock(2)

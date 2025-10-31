@@ -15,9 +15,9 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(Registries.BLOCK, MODID);
 
-    public static final DeferredHolder<Block, LiquidBlock> RAW_IRON_MOLTEN_BLOCK =
-            BLOCKS.register("raw_iron_molten_block",
-                    () -> new LiquidBlock(ModFluids.RAW_IRON_MOLTEN_SOURCE.get(),
+    public static final DeferredHolder<Block, LiquidBlock> MOLTEN_IRON_BLOCK =
+            BLOCKS.register("molten_iron_block",
+                    () -> new LiquidBlock(ModFluids.MOLTEN_IRON.get(),
                             BlockBehaviour.Properties.of()
                                     .mapColor(MapColor.COLOR_BROWN)
                                     .noCollission()

@@ -19,15 +19,15 @@ public class ClientModEvents {
 
     @SubscribeEvent
     public static void onClientSetup(FMLClientSetupEvent event) {
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.RAW_IRON_MOLTEN_SOURCE.get(), RenderType.translucent());
-        ItemBlockRenderTypes.setRenderLayer(ModFluids.RAW_IRON_MOLTEN_FLOWING.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_IRON.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_IRON_FLOWING.get(), RenderType.translucent());
     }
 
     @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
         event.registerFluidType(new IClientFluidTypeExtensions() {
-            private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/raw_iron_molten_still");
-            private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/raw_iron_molten_flow");
+            private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_iron_still");
+            private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_iron_flowing");
 
             @Override
             public @NotNull ResourceLocation getStillTexture() {
@@ -38,6 +38,6 @@ public class ClientModEvents {
             public @NotNull ResourceLocation getFlowingTexture() {
                 return FLOWING;
             }
-        }, ModFluidTypes.RAW_IRON_MOLTEN_TYPE.get());
+        }, ModFluidTypes.MOLTEN_IRON_TYPE.get());
     }
 }
