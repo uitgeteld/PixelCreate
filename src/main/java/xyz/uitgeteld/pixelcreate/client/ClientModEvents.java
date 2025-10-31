@@ -26,7 +26,7 @@ public class ClientModEvents {
     @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
         event.registerFluidType(new IClientFluidTypeExtensions() {
-            private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_iron_still");
+            private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_iron");
             private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_iron_flowing");
 
             @Override
