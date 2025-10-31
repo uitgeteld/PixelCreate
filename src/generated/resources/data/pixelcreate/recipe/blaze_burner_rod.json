@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "AXA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:blaze_rod"
+    },
+    "X": {
+      "item": "create:empty_blaze_burner"
+    }
+  },
+  "result": {
+    "id": "create:blaze_burner",
+    "count": 1
+  }
+}
