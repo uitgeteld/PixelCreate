@@ -84,10 +84,10 @@ public class RandomTeleportCommand {
     }
 
     private static boolean isUnsafeBlock(BlockState state) {
-        // Add more unsafe blocks as needed
         return state.liquid() ||
                 state.is(Blocks.CACTUS) ||
                 state.is(Blocks.FIRE) ||
-                state.is(Blocks.MAGMA_BLOCK);
+                state.is(Blocks.MAGMA_BLOCK) ||
+                state.is(Blocks.WATER);
     }
 }
