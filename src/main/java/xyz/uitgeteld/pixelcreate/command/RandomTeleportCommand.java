@@ -84,10 +84,9 @@ public class RandomTeleportCommand {
     }
 
     private static boolean isUnsafeBlock(BlockState state) {
-        return state.liquid() ||
+        return !state.getFluidState().isEmpty() ||
                 state.is(Blocks.CACTUS) ||
                 state.is(Blocks.FIRE) ||
-                state.is(Blocks.MAGMA_BLOCK) ||
-                state.is(Blocks.WATER);
+                state.is(Blocks.MAGMA_BLOCK);
     }
 }
