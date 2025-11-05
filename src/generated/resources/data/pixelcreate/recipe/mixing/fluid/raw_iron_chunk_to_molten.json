@@ -1,6 +1,5 @@
 {
   "type": "create:mixing",
-  "heatRequirement": "heated",
   "ingredients": [
     {
       "item": "pixelcreate:raw_iron_chunk"

@@ -1,6 +1,5 @@
 {
   "type": "create:mixing",
-  "heat_requirement": "superheated",
   "ingredients": [
     {
       "item": "pixelmon:platinum_ingot"
