@@ -7,7 +7,6 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xyz.uitgeteld.pixelcreate.PixelCreate;
-import xyz.uitgeteld.pixelcreate.block.ModBlocks;
 import xyz.uitgeteld.pixelcreate.item.ModItems;
 import xyz.uitgeteld.pixelcreate.item.pokeball.AncientPokeballs;
 import xyz.uitgeteld.pixelcreate.item.pokeball.NormalPokeballs;
