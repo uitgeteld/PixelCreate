@@ -2,15 +2,13 @@ package xyz.uitgeteld.pixelcreate.client;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
-import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
-import org.jetbrains.annotations.NotNull;
 import xyz.uitgeteld.pixelcreate.PixelCreate;
+import xyz.uitgeteld.pixelcreate.fluid.FluidRegistrationHelper;
 import xyz.uitgeteld.pixelcreate.fluid.ModFluidTypes;
 import xyz.uitgeteld.pixelcreate.fluid.ModFluids;
 
@@ -21,38 +19,18 @@ public class ClientModEvents {
     public static void onClientSetup(FMLClientSetupEvent event) {
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_IRON.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_IRON_FLOWING.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_ALUMINUM.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ModFluids.MOLTEN_ALUMINUM_FLOWING.get(), RenderType.translucent());
     }
 
     @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
-        event.registerFluidType(new IClientFluidTypeExtensions() {
-            private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_iron");
-            private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_iron_flowing");
+        event.registerFluidType(
+                FluidRegistrationHelper.createClientExtensions("molten_iron"),
+                ModFluidTypes.MOLTEN_IRON_TYPE.get());
 
-            @Override
-            public @NotNull ResourceLocation getStillTexture() {
-                return STILL;
-            }
-
-            @Override
-            public @NotNull ResourceLocation getFlowingTexture() {
-                return FLOWING;
-            }
-        }, ModFluidTypes.MOLTEN_IRON_TYPE.get());
-
-        event.registerFluidType(new IClientFluidTypeExtensions() {
-            private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_aluminum");
-            private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_aluminum_flowing");
-
-            @Override
-            public @NotNull ResourceLocation getStillTexture() {
-                return STILL;
-            }
-
-            @Override
-            public @NotNull ResourceLocation getFlowingTexture() {
-                return FLOWING;
-            }
-        }, ModFluidTypes.MOLTEN_ALUMINUM_TYPE.get());
+        event.registerFluidType(
+                FluidRegistrationHelper.createClientExtensions("molten_aluminum"),
+                ModFluidTypes.MOLTEN_ALUMINUM_TYPE.get());
     }
 }

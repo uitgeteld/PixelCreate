@@ -13,22 +13,9 @@ public class ModFluidTypes {
 
     public static final DeferredHolder<FluidType, FluidType> MOLTEN_IRON_TYPE =
             FLUID_TYPES.register("molten_iron",
-                    () -> new FluidType(FluidType.Properties.create()
-                            .density(3000)
-                            .viscosity(6000)
-                            .motionScale(0.007)
-                            .lightLevel(15)
-                            .canConvertToSource(false)
-                    ));
+                    () -> new FluidType(FluidRegistrationHelper.createMoltenFluidTypeProperties()));
 
     public static final DeferredHolder<FluidType, FluidType> MOLTEN_ALUMINUM_TYPE =
             FLUID_TYPES.register("molten_aluminum",
-                    () -> new FluidType(FluidType.Properties.create()
-                            .density(3000)
-                            .viscosity(6000)
-                            .motionScale(0.007)
-                            .lightLevel(15)
-                            .canConvertToSource(false)
-                    ));
-
+                    () -> new FluidType(FluidRegistrationHelper.createMoltenFluidTypeProperties()));
 }

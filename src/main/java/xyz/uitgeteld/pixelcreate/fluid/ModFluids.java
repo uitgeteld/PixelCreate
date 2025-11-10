@@ -32,28 +32,22 @@ public class ModFluids {
                     () -> new BaseFlowingFluid.Flowing(getMoltenAluminumProperties()));
 
     private static BaseFlowingFluid.Properties getMoltenIronProperties() {
-        return new BaseFlowingFluid.Properties(
+        return FluidRegistrationHelper.createMoltenFluidProperties(
                 ModFluidTypes.MOLTEN_IRON_TYPE,
                 MOLTEN_IRON,
-                MOLTEN_IRON_FLOWING)
-                .block(() -> (LiquidBlock) ModBlocks.MOLTEN_IRON_BLOCK.get())
-                .bucket(ModItems.MOLTEN_IRON_BUCKET)
-                .tickRate(30)
-                .slopeFindDistance(2)
-                .levelDecreasePerBlock(2)
-                .explosionResistance(1000f);
+                MOLTEN_IRON_FLOWING,
+                () -> (LiquidBlock) ModBlocks.MOLTEN_IRON_BLOCK.get(),
+                ModItems.MOLTEN_IRON_BUCKET
+        );
     }
 
     private static BaseFlowingFluid.Properties getMoltenAluminumProperties() {
-        return new BaseFlowingFluid.Properties(
+        return FluidRegistrationHelper.createMoltenFluidProperties(
                 ModFluidTypes.MOLTEN_ALUMINUM_TYPE,
                 MOLTEN_ALUMINUM,
-                MOLTEN_ALUMINUM_FLOWING)
-                .block(() -> (LiquidBlock) ModBlocks.MOLTEN_ALUMINUM_BLOCK.get())
-                .bucket(ModItems.MOLTEN_ALUMINUM_BUCKET)
-                .tickRate(30)
-                .slopeFindDistance(2)
-                .levelDecreasePerBlock(2)
-                .explosionResistance(1000f);
+                MOLTEN_ALUMINUM_FLOWING,
+                () -> (LiquidBlock) ModBlocks.MOLTEN_ALUMINUM_BLOCK.get(),
+                ModItems.MOLTEN_ALUMINUM_BUCKET
+        );
     }
 }
