@@ -19,9 +19,17 @@ public class ModFluids {
             FLUIDS.register("molten_iron",
                     () -> new BaseFlowingFluid.Source(getMoltenIronProperties()));
 
+    public static final DeferredHolder<Fluid, BaseFlowingFluid.Source> MOLTEN_ALUMINUM =
+            FLUIDS.register("molten_aluminum",
+                    () -> new BaseFlowingFluid.Source(getMoltenAluminumProperties()));
+
     public static final DeferredHolder<Fluid, BaseFlowingFluid.Flowing> MOLTEN_IRON_FLOWING =
             FLUIDS.register("molten_iron_flowing",
                     () -> new BaseFlowingFluid.Flowing(getMoltenIronProperties()));
+
+    public static final DeferredHolder<Fluid, BaseFlowingFluid.Flowing> MOLTEN_ALUMINUM_FLOWING =
+            FLUIDS.register("molten_aluminum_flowing",
+                    () -> new BaseFlowingFluid.Flowing(getMoltenAluminumProperties()));
 
     private static BaseFlowingFluid.Properties getMoltenIronProperties() {
         return new BaseFlowingFluid.Properties(
@@ -30,6 +38,19 @@ public class ModFluids {
                 MOLTEN_IRON_FLOWING)
                 .block(() -> (LiquidBlock) ModBlocks.MOLTEN_IRON_BLOCK.get())
                 .bucket(ModItems.MOLTEN_IRON_BUCKET)
+                .tickRate(30)
+                .slopeFindDistance(2)
+                .levelDecreasePerBlock(2)
+                .explosionResistance(1000f);
+    }
+
+    private static BaseFlowingFluid.Properties getMoltenAluminumProperties() {
+        return new BaseFlowingFluid.Properties(
+                ModFluidTypes.MOLTEN_ALUMINUM_TYPE,
+                MOLTEN_ALUMINUM,
+                MOLTEN_ALUMINUM_FLOWING)
+                .block(() -> (LiquidBlock) ModBlocks.MOLTEN_ALUMINUM_BLOCK.get())
+                .bucket(ModItems.MOLTEN_ALUMINUM_BUCKET)
                 .tickRate(30)
                 .slopeFindDistance(2)
                 .levelDecreasePerBlock(2)

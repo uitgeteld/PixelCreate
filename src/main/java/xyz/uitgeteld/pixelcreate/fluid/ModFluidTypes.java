@@ -20,4 +20,15 @@ public class ModFluidTypes {
                             .lightLevel(15)
                             .canConvertToSource(false)
                     ));
+
+    public static final DeferredHolder<FluidType, FluidType> MOLTEN_ALUMINUM_TYPE =
+            FLUID_TYPES.register("molten_aluminum",
+                    () -> new FluidType(FluidType.Properties.create()
+                            .density(3000)
+                            .viscosity(6000)
+                            .motionScale(0.007)
+                            .lightLevel(15)
+                            .canConvertToSource(false)
+                    ));
+
 }

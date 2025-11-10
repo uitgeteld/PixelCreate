@@ -32,4 +32,11 @@ public class ModItems {
                             new Item.Properties()
                                     .craftRemainder(Items.BUCKET)
                                     .stacksTo(1)));
+
+    public static final DeferredHolder<Item, BucketItem> MOLTEN_ALUMINUM_BUCKET =
+            ITEMS.register("molten_aluminum_bucket",
+                    () -> new BucketItem(ModFluids.MOLTEN_ALUMINUM.get(),
+                            new Item.Properties()
+                                    .craftRemainder(Items.BUCKET)
+                                    .stacksTo(1)));
 }

@@ -39,5 +39,20 @@ public class ClientModEvents {
                 return FLOWING;
             }
         }, ModFluidTypes.MOLTEN_IRON_TYPE.get());
+
+        event.registerFluidType(new IClientFluidTypeExtensions() {
+            private static final ResourceLocation STILL = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_aluminum");
+            private static final ResourceLocation FLOWING = ResourceLocation.fromNamespaceAndPath(PixelCreate.MODID, "block/molten_aluminum_flowing");
+
+            @Override
+            public @NotNull ResourceLocation getStillTexture() {
+                return STILL;
+            }
+
+            @Override
+            public @NotNull ResourceLocation getFlowingTexture() {
+                return FLOWING;
+            }
+        }, ModFluidTypes.MOLTEN_ALUMINUM_TYPE.get());
     }
 }

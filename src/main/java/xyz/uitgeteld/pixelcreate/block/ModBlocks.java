@@ -25,4 +25,15 @@ public class ModBlocks {
                                     .lightLevel((state) -> 15)
                                     .noLootTable()
                                     .replaceable()));
+
+    public static final DeferredHolder<Block, LiquidBlock> MOLTEN_ALUMINUM_BLOCK =
+            BLOCKS.register("molten_aluminum_block",
+                    () -> new LiquidBlock(ModFluids.MOLTEN_ALUMINUM.get(),
+                            BlockBehaviour.Properties.of()
+                                    .mapColor(MapColor.COLOR_BROWN)
+                                    .noCollission()
+                                    .strength(100.0F, 100.0F)
+                                    .lightLevel((state) -> 15)
+                                    .noLootTable()
+                                    .replaceable()));
 }

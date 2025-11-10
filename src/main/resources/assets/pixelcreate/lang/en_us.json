@@ -17,6 +17,10 @@
   "fluid_type.pixelcreate.molten_iron": "Molten Iron",
   "item.pixelcreate.molten_iron_bucket": "Molten Iron Bucket",
   "block.pixelcreate.molten_iron_block": "Molten Iron",
+  "fluid.pixelcreate.molten_aluminum": "Molten Aluminum",
+  "fluid_type.pixelcreate.molten_aluminum": "Molten Aluminum",
+  "item.pixelcreate.molten_aluminum_bucket": "Molten Aluminum Bucket",
+  "block.pixelcreate.molten_aluminum_block": "Molten Aluminum",
 
   "item.pixelcreate.incomplete_poke_ball": "Incomplete Poké Ball",
   "item.pixelcreate.incomplete_great_ball": "Incomplete Great Ball",
