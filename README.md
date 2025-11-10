@@ -9,7 +9,7 @@ Build, press, and deploy your way to the ultimate Pokémon factory — all using
 ## 🌟 Features
 
 - 🔧 **Full Create integration** with Pixelmon items  
-- ⚙️ Craft **Poké Balls and Pixelmon materials** using Create machinery  
+- ⚙️ Craft **Poké Balls** using Create machinery  
 - 🧱 Supports **sequenced assembly** and full automation  
 - 🎨 Works seamlessly with both mods — **no setup required**
 
