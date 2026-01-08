@@ -1,3 +1,6 @@
 Todo-list {
-Creating 1.20.1 Forge version
+    Creating 1.20.1 Forge version // Rethinking this
+    Make the fluid registration easier (Using code of another project)
+    Make registration of "incomplete" pokeballs easier (enums)
+    Set over the textures from other project to here
 }
